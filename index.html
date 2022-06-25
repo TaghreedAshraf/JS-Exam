@@ -1,0 +1,141 @@
+<html>
+<head>
+  <title>JS Exam</title>
+
+  <link rel="icon" href="image/logo.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="keywords" content=""> 
+  <meta name="description" content="">  
+  <meta name="author" content="Taghreed Ashraf"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+</head>
+<body>
+
+<!-- Side Navbar-->
+  <section id="navBar">
+
+      <div id="whiteNav">
+        <div class="logo">
+          <img src="image/logo2.png" alt="logo">
+        </div>
+        <div class="close">
+          <i class="fa-solid fa-align-justify fa-2x open-close"></i>
+        </div>
+        <div class="icons d-flex flex-column">
+          <i class="fa-solid fa-globe my-3"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+
+      <div id="BlackNav">
+        <div class="nav-item overflow-hidden">
+          <ul>
+            <li class="wow fadeInUpBig" data-wow-delay="0.20s">
+              <a class="link-movie" href="#dataMovie" attrLink="movie/now_playing">Now playing</a>
+            </li>
+            <li class="wow fadeInUpBig" data-wow-delay="0.40s">
+              <a class="link-movie" href="#dataMovie" attrLink="movie/popular">Popular</a>
+            </li>
+            <li class="wow fadeInUpBig" data-wow-delay="0.60s">
+              <a class="link-movie" href="#dataMovie" attrLink="movie/top_rated">Top Rated</a>
+            </li>
+            <li class="wow fadeInUpBig" data-wow-delay="0.80s">
+              <a class="link-movie" href="#dataMovie" attrLink="trending/all/day">Trending</a>
+            </li>
+            <li class="wow fadeInUpBig" data-wow-delay="1s">
+              <a class="link-movie" href="#dataMovie" attrLink="movie/upcoming">Upcoming</a>
+            </li>
+            <li class="wow fadeInUpBig" data-wow-delay="1.25s">
+              <a class="link-movie" href="#contactUs">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <a ><i class="fa-brands fa-facebook-f"></i></a>
+          <a ><i class="fa-brands fa-twitter"></i></a>
+          <a ><i class="fa-solid fa-globe"></i></a>
+          <p class="my-4">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+  </section>
+
+<!--Section One Show Movie-->
+  <section id="dataMovie" class="my-5 py-4">
+    <div class="container">
+      <form>
+        <div class="row inputMovie g-3 mb-5 mt-2 pb-5 mx-5">
+          <div class="col-md me-md-2">
+            <input type="text" id="search"  class="form-control" placeholder="get movies by word...">
+          </div>
+          <div class="col-md ms-md-2">
+            <input type="text" id="searchWord" class="form-control" placeholder="search...">
+          </div>
+        </div>
+      </form>
+
+      <div id="rowData" class="row gy-5">
+
+      </div>
+    </div>
+  </section>
+
+<!--Section Two Form-->
+  <section id="contactUs">
+    <div class="container">
+      <div class="row">
+
+        <h2 class="mt-4 mb-5 mx-md-5 ps-5">ContacUs...</h2>
+
+        <form class="px-4 mx-md-5 mb-5">
+          <div class="row g-3 mb-4 ">
+            <div class="col-md me-3">
+              <input id="fullName" type="text" class="form-control inputTwo" placeholder="Enter Your Name">
+              <p id="fullNameAlert" class="alert alert-danger d-none mb-0 p-3 rounded-3">Your Name is not valid</p>
+            </div>
+            <div class="col-md">
+              <input id="email" type="email" class="form-control inputTwo" placeholder="Enter Email">
+              <p id="emailAlert" class="alert alert-danger d-none mb-0 p-3 rounded-3">entre valid phone</p>
+            </div>
+          </div>
+  
+          <div class="row g-3 mb-4 ">
+            <div class="col-md me-3">
+              <input id="phone" type="text" class="form-control inputTwo" placeholder="Enter Phone">
+              <p id="phoneAlert" class="alert alert-danger d-none mb-0 p-3 rounded-3">entre valid phone</p>
+            </div>
+            <div class="col-md">
+              <input id="age" type="text" class="form-control inputTwo" placeholder="Enter Age">
+              <p id="ageAlert" class="alert alert-danger d-none mb-0 p-3 rounded-3">entre valid Age</p>
+            </div>
+          </div>
+  
+          <div class="row g-3 mb-4 ">
+            <div class="col-md me-3">
+              <input id="pass" type="password" class="form-control inputTwo" placeholder="Enter Password">
+              <p id="passAlert" class="alert alert-danger d-none mb-0 p-3 rounded-3 ">entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+            </div>
+            <div class="col-md">
+              <input id="rePass" type="password" class="form-control inputTwo" placeholder="Enter RePassword">
+              <p id="rePassAlert" class="alert alert-danger d-none mb-0 p-3 rounded-3">entre valid Repassword</p>
+            </div>
+          </div>
+          <button disabled class="btn btn-outline-danger mt-1">submit</button>
+        </form>
+        
+
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

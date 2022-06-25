@@ -1,0 +1,157 @@
+body {
+  background-color: #000000f2;
+  font-family: "Segoe UI Light" ;
+}
+
+#navBar #whiteNav{
+  width: 60px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f8f6f6;
+  text-align: center;
+  z-index: 999999999;
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+#navBar #whiteNav .logo {
+  transform: translateY(-20px);
+}
+
+#navBar #whiteNav .logo img {
+  width: 28px;
+}
+
+#navBar #whiteNav i {
+  cursor: pointer;
+}
+
+#navBar #BlackNav {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-100%);
+  transition: all 0.5s ease
+}
+
+#navBar #BlackNav .nav-item ul {
+  list-style-type: none;
+}
+
+#navBar #BlackNav .nav-item ul li {
+  margin: 25px 0;
+  font-weight: 500;
+}
+
+#navBar #BlackNav .nav-item ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#navBar #BlackNav .nav-item ul li a:hover {
+  color: #dc3545;
+}
+
+#navBar #BlackNav .social {
+  margin-left: 40px;
+}
+
+#navBar #BlackNav .social a i {
+  color: white;
+  margin: 0 10px;
+  transition: all 0.6s;
+}
+
+#navBar #BlackNav .social a i:hover {
+  color: #dc3545;
+}
+
+#navBar #BlackNav .social p {
+  color: #999999;
+}
+
+.form-control {
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,.7);
+  border-radius: 0;
+  color: #495057;
+  text-align: center;
+}
+
+.form-control:focus {
+  color: #5d656e;
+}
+
+#dataMovie .col-md-4 {
+  box-shadow: 0 10px 4px rgba(0,0,0,.15)!important;
+}
+
+#dataMovie .movie-item {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#dataMovie .movie-item .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background-color: rgba(255,255,255,.7);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 800;
+  transition: all 1s
+}
+
+#dataMovie .movie-item:hover .layer {
+  bottom: 0%;
+}
+
+#dataMovie .movie-item .pic {
+  border-radius: 10px;
+}
+
+#contactUs h2 {
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  color: #dc3545;
+  background-color: transparent;
+  border-color: #dc3545;
+}
+
+/* ----- Media Screen ------*/
+@media screen and (max-width:568px)
+{
+  #contactUs {
+    width: 80%;
+    margin: auto;
+  }
+
+  #dataMovie  {
+    width: 83%;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
